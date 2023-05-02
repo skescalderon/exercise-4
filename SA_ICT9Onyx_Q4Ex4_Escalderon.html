@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title> Converter</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 2em;
+      color: #fff;
+    }
+    .title {
+      font-size: 3em;
+      margin-bottom: 2em;
+      color: #222;
+    }
+    .units {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5em;
+      flex-wrap:wrap ;
+    }
+    .panel{
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgab(0,0,0,0.15);
+      min-width: 15em;
+      height: 16em;
+      position: relative;
+    }
+ 
+     .panel:nth-child(1){
+      background: #ff4040;
+     }
+
+     .panel:nth-child(2){
+      background: #4070ff;
+     }
+     .panel:nth-child(3){
+      background: #62ff24;
+     }
+
+     .panel input{
+      border: none;
+      background: none;
+      margin-top: 0.5em;
+      width: 4em;
+      height: 2em;
+      font-size: 3em;
+      text-align: center;
+      color: #ffff;
+     }
+      
+     
+
+  </style>
+    
+</head>
+<body>
+  <h1 class="title">Converter(Temperature)</h1>
+  <div class="units">
+   <div class="panel">
+     <!--IN order to write the "°" symbol, you can type "&deg;"-->
+     <h1 class="bg-unit"></h1>
+    <h2>Celsius</h2>
+    <input type="number" id="Celsius" value="0" />
+   </div>
+   <div class="panel">
+     <h1 class="big-unit"></h1>
+     <h2>Farenheit</h2>
+     <input type="number" id="fahrenheit" value="0" />
+   </div>
+   <div class="panel">
+    <h1 class="bg-unit"></h1>
+    <h2>Kelvin</h2>
+    <input type="number" id="kelvin" value="0" />   
+   </div>
+</div>
+
+
+</body>
+</html>
+
+
